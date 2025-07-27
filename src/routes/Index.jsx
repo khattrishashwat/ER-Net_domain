@@ -5,7 +5,7 @@ import {
   Route,
 } from "react-router-dom";
 import Loader from "../Component/loader/Loader";
-import Homes from "../Component/pages/homes/Homes";
+import Homes from "../Component/pages/homes/Home";
 
 // Lazy load layout components
 const Layout = lazy(() => import("../Component/Layout/Layout"));
@@ -34,8 +34,7 @@ const routes = createBrowserRouter(
   createRoutesFromElements(
     <>
       <Route path="/" element={<WithLayout component={Homes} />} />
-      <Route path="/:slug/:slug" element={<WithLayout component={About} />} />
-      <Route path="/:slug" element={<WithLayout component={Pages} />} />
+
       <Route path="/load" element={<WithLayout component={Loader} />} />
       <Route path="*" element={<LazyComponent component={NotFound} />} />
     </>
