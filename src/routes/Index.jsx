@@ -5,7 +5,7 @@ import {
   Route,
 } from "react-router-dom";
 import Loader from "../Component/loader/Loader";
-import Homes from "../Component/pages/homes/Home";
+import Homes from "../Component/pages/home/Home";
 
 // Lazy load layout components
 const Layout = lazy(() => import("../Component/Layout/Layout"));
